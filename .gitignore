@@ -1,0 +1,22 @@
+# Root-level safety net (each app also has its own .gitignore).
+
+# Env / secrets
+.env
+*.local
+
+# The dev database ships intentionally (backend/db.sqlite3): a clone comes with
+# the platform's content and accounts, ready to run. Journals stay untracked.
+*.sqlite3-journal
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Node
+node_modules/
+.next/
+
+# OS / editor
+.DS_Store
+Thumbs.db

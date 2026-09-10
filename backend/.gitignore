@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Django
+db.sqlite3-journal
+# media/ stays ignored as a whole; files referenced by shipped content are
+# force-added (git add -f) so a clone gets working lessons.
+/media/
+/staticfiles/
+.env
+
+# Test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
